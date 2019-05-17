@@ -1,0 +1,43 @@
+<div class="container-div">
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Loader</h5>
+      <br>
+      <form #myForm='ngForm' (ngSubmit)="submitForm(myForm)">
+        <!-- <p> VAlue : {{myForm.value | json}} </p> -->
+        <div class="wrap-input100 validate-input" class="form-group">
+          <input class="input100" type="text" name="nombre" placeholder="Nombre" [(ngModel)]='nombre'>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input" class="form-group">
+          <input class="input100" type="text" name="email" placeholder="Email" [(ngModel)]='email'>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input" class="form-group">
+          <input class="input100" type="text" name="division" placeholder="Division" [(ngModel)]='division'>
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div>
+          <input class="btn btn-primary" type="file" (change)="onFileSelected($event)">
+        </div>
+        <input class="btn btn-primary" type="submit">
+      </form>
+
+    </div>
+  </div>
+  <div>
+    <img src="../../assets/imagenbaserojasinfondocortado.png" class="fondo">
+  </div>
+</div>
